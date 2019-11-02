@@ -1,0 +1,5 @@
+Color rojo: #ff0000
+Color negro: #0a0000
+Color rojo oscuro: #990000
+Color rojo claro: ee3d3d
+Color rojo muy claro:ffc1c1

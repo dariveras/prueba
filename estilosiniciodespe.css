@@ -1,0 +1,144 @@
+* {
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box; 
+}
+
+body {
+	background: #fff;
+	font-family: 'Black Ops One', cursive;
+
+}
+
+.menu_bar {
+	display: none;
+	z-index: 1000;
+}
+
+header {
+	width: 100%;
+	position: fixed;
+	z-index: 1000;
+}
+
+header nav {
+	background: #F2B80D;
+	z-index: 1000;
+	width: 100%;
+	margin: 20px auto;
+	margin-top: 0%;
+
+}
+
+header nav ul {
+	list-style: none;
+}
+
+header nav ul li {
+	display: inline-block; /*uno al lado del otro*/
+	position: relative;
+
+}
+header nav ul li a:hover{
+		background: #00657F;
+		color: #F2B80D;
+
+}
+
+header nav ul li a {
+	color: #00657F;
+	display: block;
+	text-decoration: none;
+	padding: 20px;
+
+}
+
+header nav ul li a span {
+	margin-right: 10px;
+}
+
+header nav ul li:hover .children {
+	display: block;
+	width: 100%;
+}
+
+header nav ul li .children {
+	display: none;
+	position: absolute;
+	background: #F2B80D;
+	color: #;
+	z-index: 1000;
+
+}
+.logo {
+ 	float: right;
+ 	position: relative;
+ 	right: 20px;
+ }
+
+ @media screen and (max-width: 800px) {
+ 	body {
+ 		padding-top: 80px;
+ 	}
+ 	.logo {
+ 		display: none;
+ 	}
+ 	.menu_bar {
+ 		display: block;
+ 		width: 100%;
+ 		position: fixed;
+ 		top: 0;
+ 		background: #ee3d3d;
+
+
+ 	}
+ 	.menu_bar .bt-menu {
+ 		display: block;
+ 		padding: 20px;
+ 		color: #f2f2f2 !important;
+ 		overflow: hidden;
+ 		font-size: 25px;
+ 		font-weight: bold;
+ 		text-decoration: none;
+ 	}
+ 	.menu_bar span {
+ 		float: right;
+ 		font-size: 40px;
+ 	}
+ 	header nav {
+ 		width: 80%;
+ 		position: fixed;
+ 		right: 100%;
+ 		margin: 0;
+ 		overflow: scroll;
+ 		height: calc(100% - 80px);
+
+
+ 	}
+ 	header nav ul li {
+ 		display: block;
+ 		border-bottom: 1px solid rgba(255,255,255,.5);
+
+ 	}
+ 	header nav ul li a {
+ 		display: block;
+ 		font-size: 18px;
+ 	}
+ 	header nav ul li:hover .children{
+ 		display: none;
+ 	}
+ 	header nav ul li .children {
+ 		width: 100%;
+ 		position: relative;
+ 		display: none;
+ 	}
+ 	header nav ul li .childre li a {
+ 		margin-left: 20px;
+ 	}
+ 	header nav ul li .caret {
+ 		float: right;
+ 	}
+
+ }
